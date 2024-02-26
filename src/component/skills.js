@@ -2,7 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 function Skills() {
   return (
-    <Element name="skills" className=" bg-black h-screen w-full" >
+    <Element name="skills" className=" bg-black h-screen max-md:h-[1200px] " >
             <div className="h-full flex flex-col justify-center items-center ">
       <div>
         <div className=" flex justify-center">
@@ -15,7 +15,7 @@ function Skills() {
         <div className="">
           <h1 className="pb-5 text-2xl">Coding Skills</h1>
 
-          <div className="border  border-red-800 rounded-md w-96">
+          <div className="border  border-red-800 rounded-md w-96 max-md:w-72">
             <div className="p-5">
               <div className="flex justify-between">
                 <span>HTML</span>
@@ -68,7 +68,7 @@ function Skills() {
         </div>
         <div>
           <h1 className=" pb-5 text-2xl">Professional Skills</h1>
-          <div className="border  border-red-800 rounded-md w-96">
+          <div className="border  border-red-800 rounded-md w-96 max-md:w-72">
             <div className="p-5">
               <div className="flex justify-between">
                 <span>Web Design</span>

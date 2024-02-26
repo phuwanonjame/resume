@@ -6,9 +6,9 @@ function Contact() {
    <Element name="contact" className=" bg-black h-screen w-full">
      <div className="h-full flex flex-col justify-center items-center ">
       <div className="flex justify-center items-center">
-        <h1 className="text-6xl text-white">CONTACT <span className="text-6xl text-red-500">ME!</span></h1>
+        <h1 className="text-6xl text-white max-md:text-5xl">CONTACT <span className="text-6xl max-md:text-5xl text-red-500">ME!</span></h1>
       </div>
-      <div className="w-[100%] flex justify-center items-center pt-20">
+      <div className="w-[100%] max-md:w-[90%] flex justify-center items-center pt-20">
         <div className=" border rounded-md ">
           <div className="p-5 flex gap-2">
             <input type="text" placeholder="Full Name" className="p-2 w-full rounded-md"></input>

@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 function Main() {
   console.log(image);
   return (
-    <Element name="home" className=" pt-20 bg-black h-screen ">
+    <Element name="home" className=" pt-20 max-md:pt-0 max-md:h-[100%]  bg-black h-screen ">
       
       <div className= "flex justify-center  items-center max-md:flex-col max-md:pt-20">
         <div className="  ">
