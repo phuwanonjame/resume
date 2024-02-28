@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 function Main() {
   console.log(image);
   return (
-    <Element name="home" className=" pt-20 max-md:pt-0 max-md:h-[100%]  bg-black h-screen ">
+    <Element name="home" className=" pt-20 max-md:pt-10 max-sm:p-5  max-md:h-[100%]  bg-black h-screen ">
       
       <div className= "flex justify-center  items-center max-md:flex-col max-md:pt-20">
         <div className="  ">
@@ -18,6 +18,11 @@ function Main() {
             incidunt perspiciatis obcaecati quia maxime temporibus
             necessitatibus quidem et, mollitia quaerat.
           </p>
+          <div className="p-5 flex gap-7">
+          <a href="https://www.facebook.com/phuwanon.jame"> <i class="fa-brands fa-facebook text-red-600 text-5xl cursor-pointer  "></i></a>
+          <a href="https://www.instagram.com/pk1st_1/"> <i class="fa-brands fa-instagram text-red-600 text-5xl cursor-pointer"></i></a>
+          <a href="https://github.com/phuwanonjame"> <i class="fa-brands fa-github text-red-600  text-5xl cursor-pointer"></i></a>
+          </div>
           <div className="mt-4">
             <button className=" mr-5 w-32 p-4 rounded-md bg-blue-700 text-white">
               Hire Me
