@@ -21,7 +21,7 @@ function Navbar() {
       <div className=" flex justify-between items-center max-md:block h-20 ml-10 mr-10  max-md:ml-0  max-md:mr-0   ">
         <div className="flex justify-center items-center gap-4 max-md:justify-between max-md:w-full  ">
           <i class="text-white text-xl  fa-solid fa-bars hidden max-md:block max-md:text-2xl  cursor-pointer ml-2 " onClick={()=>setOpenmenu(true)} ></i>
-          <p className="text-red-500 mr-2">phuwanon.com</p>
+          <a href="." className="text-red-500 mr-2 cursor-pointer">phuwanon.com</a>
         </div>
         <div>
         <ul
@@ -71,6 +71,17 @@ function Navbar() {
               duration={1000}
             >
               Skills
+            </Link>
+          </li>
+          <li className="max-md:p-5">
+            <Link
+              to="portfolio"
+              className=" cursor-pointer  hover:text-red-500"
+              smooth={true}
+              onClick={()=>setOpenmenu(false)}
+              duration={1000}
+            >
+              Portfolio
             </Link>
           </li>
           <li className="max-md:p-5">

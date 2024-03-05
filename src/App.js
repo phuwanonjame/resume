@@ -4,6 +4,7 @@ import Contact from "./component/contact";
 import Education from "./component/education";
 import Main from "./component/main";
 import Navbar from "./component/navbar";
+import Portfolio from "./component/portfolio";
 import Skills from "./component/skills";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
       <Education />
       <Skills />
+      <Portfolio/>
       <Contact />
     </div>
   );

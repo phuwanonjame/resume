@@ -4,7 +4,7 @@ function Skills() {
   const [openpage, setOpebpage] = useState(false);
   console.log(openpage);
   return (
-    <Element name="skills" className=" bg-black h-screen  max-md:h-[1200px] ">
+    <Element name="skills" className="  bg-black h-screen  max-md:h-[120%]  max-sm:[120%]">
       <div className="h-full flex flex-col justify-center items-center ">
         <div>
           <div className=" flex justify-center">
@@ -25,7 +25,7 @@ function Skills() {
                   <p className="mr-5">Tech Stack</p>
                 </div>
                 <div
-                  className={`flex justify-center   text-2xl ${openpage ? "text-red-500" : "text-white"} items-center gap-2 cursor-pointer`}
+                  className={`flex justify-center    text-2xl ${openpage ? "text-red-500" : "text-white"} items-center gap-2 cursor-pointer`}
                   onClick={() => setOpebpage(true)}
                 >
                   <i class="fa-solid fa-screwdriver-wrench"></i>
