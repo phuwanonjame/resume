@@ -17,10 +17,13 @@ function Navbar() {
     };
   }, []);
   return (
-    <nav className="bg-black  fixed w-full ">
+    <nav className="bg-black  fixed w-full   z-50">
       <div className=" flex justify-between items-center max-md:block h-20 ml-10 mr-10  max-md:ml-0  max-md:mr-0   ">
         <div className="flex justify-center items-center gap-4 max-md:justify-between max-md:w-full  ">
-          <i class="text-white text-xl  fa-solid fa-bars hidden max-md:block max-md:text-2xl  cursor-pointer ml-2 " onClick={()=>setOpenmenu(true)} ></i>
+          <i class="text-white text-xl  fa-solid fa-bars hidden max-md:block max-md:text-2xl  cursor-pointer ml-2 " onClick={() => {
+    setOpenmenu(true);
+   
+  }}  ></i>
           <a href="." className="text-red-500 mr-2 cursor-pointer">phuwanon.com</a>
         </div>
         <div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Element } from "react-scroll";
 import emailjs from "emailjs-com"; 
+import Model from "./model";
 
 function Contact() {
     const [name, setName] = useState("");
@@ -8,18 +9,24 @@ function Contact() {
     const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [showModel, setShowModel] = useState(false); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        if (name === "" || email === "" || phone === "" || subject ==="" || message ===""||showModel==="") {
+            window.alert("กรุณากรอกข้อมูล");
+        } else {
+            setShowModel(true); 
+        }
+    };
+
+    const handleOk = () => {
         const templateParams = {
             to_name: name,
             to_email: 'jgamerz0001@gmail.com', 
-            message: `Name: ${name}\nEmail:${email}
-            Phone: ${phone}\nMessage: ${message}`, 
-            
-            
+            message: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`, 
         };
+
         emailjs.send('service_6y36a3f', 'template_uk2eri8', templateParams, 'S_8qBx1CblZqyA-Km')
             .then((response) => {
                 console.log('Email sent successfully:', response.status, response.text);
@@ -28,11 +35,15 @@ function Contact() {
                 setMessage('');
                 setPhone('');
                 setSubject('');
-
-            }, (error) => {
+                setShowModel(false); 
+            })
+            .catch((error) => {
                 console.error('Error sending email:', error);
-              
             });
+    };
+
+    const handleCancel = () => {
+        setShowModel(false); 
     };
 
     return (
@@ -59,12 +70,14 @@ function Contact() {
                                 <textarea className="w-full p-2 rounded-md" placeholder="Your Message" rows={10} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                             </div>
                             <div className=" w-full flex justify-center items-center pb-5">
-                            <button type="submit" className=" p-2 bg-red-500 text-white rounded-md">Send Message</button>
+                                <button type="submit" className=" p-2 bg-red-500 hover:bg-white hover:text-black  text-white rounded-md">Send Message</button>
                             </div>
-                           
                         </form>
                     </div>
                 </div>
+                {showModel && ( 
+                    <Model handleOk={handleOk} handleCancel={handleCancel} />
+                )}
             </div>
         </Element>
     );

@@ -7,7 +7,7 @@ function About() {
       name="about"
       className=" bg-black pb-5  max-sm:h-[110%] max-md:h-[100%] h-screen w-full"
     >
-      <div className="h-full flex flex-col justify-center items-center ">
+      <div className=" h-full flex flex-col justify-center items-center ">
         <div className="flex justify-center">
           <h1 className="text-white text-7xl max-md:text-5xl  flex gap-5">
             ABOUT <p className="text-red-500">ME</p>
@@ -33,7 +33,6 @@ function About() {
                 address: City Home Rattanathibet Bang Kraso,Nonthaburi 11000
               </p>
             </div>
-
             {/* <p className="text-white max-md:overflow-hidden max-md:whitespace-pre-wrap max-md:block hidden ">
               A creative thinker with self-motivation and a high level of
               commitment to utilize knowledge and passion in designing,
@@ -46,5 +45,4 @@ function About() {
     </Element>
   );
 }
-
 export default About;
