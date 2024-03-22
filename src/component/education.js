@@ -3,7 +3,7 @@ import image from "./Untitled-2.png";
 import { Element } from "react-scroll";
 function Education() {
   return (
-    <Element name="education" className=" bg-black  max-sm:h-[110%] max-md:h-[100%] max-md:pt-20 h-screen w-full ">
+    <Element name="education" className=" bg-black  max-sm:h-[150%] max-md:h-[110%] max-md:pt-20 h-screen w-full ">
       <div className="h-full flex flex-col justify-center items-center ">
         <div className="text-7xl max-md:text-5xl flex  justify-center ">
           <h1 className="text-white flex">

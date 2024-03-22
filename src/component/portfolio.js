@@ -4,7 +4,7 @@ function Portfolio() {
   return (
     <Element
       name="portfolio"
-      className=" pt-20 max-md:pt-10 max-sm:p-5 max-sm:h-[180%]  max-md:h-[100%]  bg-black h-screen "
+      className=" pt-20 max-md:pt-10 max-sm:p-5 max-sm:h-[180%]  max-md:h-[120%]  bg-black h-screen "
     >
       <div className="flex justify-center items-center">
         <h1 className="text-white text-6xl ">

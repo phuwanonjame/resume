@@ -5,7 +5,7 @@ function About() {
   return (
     <Element
       name="about"
-      className=" bg-black pb-5  max-sm:h-[110%] max-md:h-[100%] h-screen w-full"
+      className=" bg-black pb-5  max-sm:h-[150%] max-md:h-[110%] h-screen w-full"
     >
       <div className=" h-full flex flex-col justify-center items-center ">
         <div className="flex justify-center">

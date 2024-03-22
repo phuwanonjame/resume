@@ -6,7 +6,7 @@ function Main() {
   return (
     <Element
       name="home"
-      className=" pt-20 max-md:pt-10 max-sm:p-5 max-sm:h-[100%]  max-md:h-[100%]  bg-black h-screen "
+      className=" pt-20  max-md:pt-10 max-sm:p-5 max-sm:h-[150%]  max-md:h-[100%]  bg-black h-screen "
     >
       <div className="flex justify-center  items-center max-md:flex-col max-md:pt-20">
         <div className="">

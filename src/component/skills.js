@@ -4,7 +4,7 @@ function Skills() {
   const [openpage, setOpebpage] = useState(false);
   console.log(openpage);
   return (
-    <Element name="skills" className="  bg-black h-screen  max-md:h-[120%]  max-sm:[120%]">
+    <Element name="skills" className="  bg-black h-screen  max-md:h-[120%]  max-sm:[150%]">
       <div className="h-full flex flex-col justify-center items-center ">
         <div>
           <div className=" flex justify-center">
