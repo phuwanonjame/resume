@@ -89,36 +89,8 @@ function Portfolio() {
               </a>
             </div>
           </div>
-          <div class="cursor-pointer bg-neutral-600 bg-opacity-30 shadow-sm shadow-red-500 p-5 rounded-md max-w-72 transition-transform duration-300 ease-in-out hover:translate-y-[-10px]">
-            <img
-              src="https://img.freepik.com/premium-photo/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai-gamer-headphones_117038-7596.jpg"
-              className="w-64 rounded-md"
-              alt=""
-            ></img>
-            <p className="text-white text-center mt-2">Physical-Inventory</p>
-            <p className="text-white text-center text-xs mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio
-            </p>
-            <p className="text-white text-opacity-50 text-xs mt-5 ">
-              reactjs,tailwindcss
-            </p>
-          </div>
-          <div class="cursor-pointer bg-neutral-600 bg-opacity-30 shadow-sm shadow-red-500 p-5 rounded-md max-w-72 transition-transform duration-300 ease-in-out hover:translate-y-[-10px]">
-            <img
-              src="https://img.freepik.com/premium-photo/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai-ofiice-gamer_117038-5481.jpg"
-              className="w-64 rounded-md"
-              alt=""
-            ></img>
-            <p className=" text-center mt-2 text-red-500">Physical-Inventory</p>
-            <p className="text-white text-center text-xs mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio
-            </p>
-            <p className="text-white text-opacity-50 text-xs mt-5 ">
-              reactjs,tailwindcss
-            </p>
-          </div>
+          
+          
         </div>
       </div>
     </Element>
